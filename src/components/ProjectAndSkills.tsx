@@ -35,7 +35,7 @@ const Project: React.FC<ProjectProps> = ({ title, description, imageUrl }) => {
 const SkillsAndProjects: React.FC = () => {
   const skills = [
     { name: "HTML", icon: "html.png" },
-    { name: "MySQL", icon: "mysql.png" },
+    { name: "MySQL", icon: "Mysql.png" },
     { name: "JavaScript", icon: "JS.png" },
     { name: "React", icon: "react.png" },
     { name: "Node.js", icon: "njs.png" },
