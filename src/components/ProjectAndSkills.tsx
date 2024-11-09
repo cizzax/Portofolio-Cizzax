@@ -23,9 +23,7 @@ const Project: React.FC<ProjectProps> = ({ title, description, imageUrl }) => {
       <div className="p-4">
         <h3 className="text-xl font-semibold">{title}</h3>
         <div
-          className={`mt-2 text-sm transition-all duration-300 ease-in-out ${
-            showDescription ? "opacity-100 max-h-screen" : "opacity-0 max-h-0"
-          }`}
+          className={`mt-2 text-sm transition-all duration-300 ease-in-out ${showDescription ? "opacity-100 max-h-screen" : "opacity-0 max-h-0"}`}
         >
           {description}
         </div>
@@ -54,29 +52,24 @@ const SkillsAndProjects: React.FC = () => {
   const projects = [
     {
       title: "MES4N - BE",
-      description:
-        "A web application project at SMKN 4 Bandung that helps students order products from the canteen, cooperative, and water gallon services.",
+      description: "A web application project at SMKN 4 Bandung that helps students order products from the canteen, cooperative, and water gallon services.",
       imageUrl: "MESAN.png",
     },
     {
       title: "FA PEDIA - UI/UX",
-      description:
-        "A gaming boost service that helps players level up their stars or points without having to play directly.",
+      description: "A gaming boost service that helps players level up their stars or points without having to play directly.",
       imageUrl: "fapedia.png",
     },
     {
       title: "CHESTFROG - GAMEDEV",
-      description:
-        "A chestfrog game developed in Unity, where players complete missions inside the chest.",
+      description: "A chestfrog game developed in Unity, where players complete missions inside the chest.",
       imageUrl: "kurakura.png",
     },
     {
       title: "ONLINESHOP - FE",
-      description:
-        "Onlineshop is an e-commerce platform that allows users to browse and purchase a wide range of products with ease.",
+      description: "Onlineshop is an e-commerce platform that allows users to browse and purchase a wide range of products with ease.",
       imageUrl: "masadepan.png",
-    }
-    ,
+    },
   ];
 
   return (
@@ -84,10 +77,7 @@ const SkillsAndProjects: React.FC = () => {
       id="project"
       className="min-h-screen w-full bg-gradient-to-b from-teal-700 via-gray-800 to-gray-900 text-white flex flex-col items-center pt-12"
     >
-      <h2
-        data-aos="fade-down"
-        className="text-4xl font-bold text-teal-500 mb-8"
-      >
+      <h2 data-aos="fade-down" className="text-4xl font-bold text-teal-500 mb-8">
         Project
       </h2>
 
@@ -104,12 +94,12 @@ const SkillsAndProjects: React.FC = () => {
                 <div
                   key={index}
                   data-aos="zoom-in"
-                  className="flex flex-col items-center group relative"
+                  className="flex flex-col items-center group relative transition-transform duration-200 transform hover:scale-125"
                 >
                   <img
                     src={`/image/${skill.icon}`}
                     alt={skill.name}
-                    className="w-20 h-20 object-contain"
+                    className="w-20 h-20 object-contain transition-transform duration-300"
                   />
                   <span className="text-teal-300 text-sm mt-2 group-hover:text-teal-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                     {skill.name}
@@ -124,12 +114,12 @@ const SkillsAndProjects: React.FC = () => {
                   <div
                     key={index}
                     data-aos="zoom-in"
-                    className="flex flex-col items-center group relative"
+                    className="flex flex-col items-center group relative transition-transform duration-200 transform hover:scale-125"
                   >
                     <img
                       src={`/image/${tool.icon}`}
                       alt={tool.name}
-                      className="w-20 h-20 object-contain"
+                      className="w-20 h-20 object-contain transition-transform duration-300"
                     />
                     <span className="text-teal-300 text-sm mt-2 group-hover:text-teal-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                       {tool.name}
