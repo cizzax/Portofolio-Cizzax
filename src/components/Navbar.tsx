@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
     <div className="fixed top-0 left-0 w-full p-4 bg-teal-900 bg-opacity-60 backdrop-blur-md z-10">
       <div className="flex items-center justify-between">
         {/* Tombol CV di kiri */}
-        <a href="/cv.pdf" target="_blank">
+        <a href="https://drive.google.com/file/d/18-wfKJPmh31c4maKb3gJMBhQXKc-Ll1b/view?usp=drive_link" target="_blank">
           <button className="bg-white text-black px-4 py-2 rounded-full shadow-md font-semibold">
             CV
           </button>
